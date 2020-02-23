@@ -57,6 +57,6 @@ test-suite spec
   build-depends:
     while,
     base  >= 4   && < 5,
-    hspec >= 2.5 && < 2.6
+    hspec >= 2.5 && < 2.8
 
   default-language: Haskell98
