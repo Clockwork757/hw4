@@ -23,6 +23,9 @@ spec = do
   describe "assignment" $
     it "assigns 'a' the value 3" $
     run "a := 3" `shouldBe` [("a", 3)]
+  describe "assignment" $
+    it "assigns 'a' the value 1 then the value 2" $
+    run "a := 1; a := 2" `shouldBe` [("a", 2)]
   describe "sequencing" $
     it "assigns 'a' the value 3 and 'b' the value 4" $
     run "a := 3; b := 4" `shouldBe` [("a", 3), ("b", 4)]
